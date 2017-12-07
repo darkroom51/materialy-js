@@ -1,32 +1,27 @@
-/*var nullVar = null
-var undefinedVar = undefined
-var numberVar = 1
-var boolVar = true
-var stringVar = "ala"
-var arrayVar = [1,2,3]
-var objVar = {a: 1, b: 2}
+/*var a = '1';
 
-var typesArray = [
-    typeof nullVar,
-    typeof undefinedVar,
-    typeof numberVar,
-    typeof boolVar,
-    typeof stringVar,
-    typeof arrayVar,
-    typeof objVar
-]
+if (a === 1) {
+    console.log(1);
 
+} else if (a === '1'){
+    console.log(2);
+} else if (a === 2) {
+    console.log(a);
+} else{
+    console.log(0);
+}*/
 
-console.log(
-    typeof nullVar,
-    typeof undefinedVar,
-    typeof numberVar,
-    typeof boolVar,
-    typeof stringVar,
-    typeof arrayVar,
-    typeof objVar
-)
-
-console.table(typesArray)*/
-
-console.log('hello world');
+var a = "1";
+switch (a){
+    case 1:
+        console.log(1);
+        break;
+    case "1":
+        console.log(2);
+        break;
+    case 2:
+        console.log(a);
+        break;
+    default:
+        console.log(0);
+}
