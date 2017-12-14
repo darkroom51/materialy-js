@@ -63,3 +63,31 @@ var addABCD = function addInside (a,b,c,d){return a+b+c+d;}
 //obiekt window. jest scopem globalnym!!!!
 // window.abc(1,2) jest OK. */
 
+/*
+// variables declaration and function declaration hoisting
+myFunct();
+function myFunct(){
+    console.log('hello hoist js');
+}*/
+
+/*myFunct(b);
+var b='jakis takst';
+function myFunct(x){
+    console.log(x);
+}*/
+
+/*
+var gCounter=0;
+function addPerson(p){
+    localStorage.setItem("person"+gCounter,p);
+    sessionStorage.setItem("sperson"+gCounter,p);
+    return gCounter++;
+}
+
+function rmPerson(pInd){
+    localStorage.removeItem("person"+pInd);
+}
+
+function whoisPerson(pInd){
+    return localStorage.getItem("person"+pInd);
+}*/
