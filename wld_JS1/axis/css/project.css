@@ -1,0 +1,59 @@
+.viewport {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.axis {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.axis-y {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 2px;
+    background: red;
+    height: 100%;
+    margin-left: -1px;
+}
+
+.axis-x {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    background: green;
+    width: 100%;
+    margin-top: -1px;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 25;
+}
+
+.bullet {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 40px;
+    width: 40px;
+    z-index: 35;
+    background: green;
+    color: #fff;
+    transition: all 1s ease-in;
+}
