@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.2</title>
+</head>
+<body>
+
+<!-- ############################ -->
+<script>
+    function findClosestToZero(dataString,dataCount) {
+        var n = parseInt(dataCount); // the number of temperatures to analyse
+        var inputs = dataString.split(' ');
+        var minT = 6000;
+        if (inputs[0] === '') {
+            minT = 0;
+        } else {
+            for (var i = 0; i < n; i++) {
+                var currentT = parseInt(inputs[i]);// a temperature expressed as an integer ranging from -273 to 5526
+                if ((Math.abs(minT) > Math.abs(currentT)) && (currentT !== 0)) {
+                    minT = currentT;
+                }
+                if (Math.abs(minT) === Math.abs(currentT) && (minT < currentT)) {
+                    minT = currentT;
+                }
+            }
+        }
+        return minT
+    }
+</script>
+</body>
+</html>

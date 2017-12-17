@@ -1,10 +1,18 @@
+body {
+    background: #ddd;
+    font-size: 0.9em;
+    color: #fff;
+}
+
 .viewport {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     height: 100%;
-    width: 100%;
+    width: 60%;
     overflow: hidden;
+    transform: translate(-50%, 0);
+    background: #fff;
 }
 
 .axis {
@@ -22,22 +30,22 @@
     top: 0%;
     left: 50%;
     width: 2px;
-    background: red;
+    background: gray;
     height: 100%;
     margin-left: -1px;
 }
 
 .axis-x {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 0;
     height: 2px;
-    background: green;
+    background: gray;
     width: 100%;
     margin-top: -1px;
 }
 
-.content {
+.game-board {
     position: absolute;
     top: 0;
     left: 0;
@@ -50,10 +58,22 @@
     position: absolute;
     top: 10%;
     left: 10%;
-    height: 40px;
-    width: 40px;
+    height: 4%;
+    width: 4%;
     z-index: 35;
-    background: green;
+    background: gray;
     color: #fff;
-    transition: all 1s ease-in;
+    transition: all 500ms linear;
+}
+
+.pad {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    height: 5%;
+    width: 20%;
+    z-index: 36;
+    background: #444;
+    color: #fff;
+    transition: all 10ms linear;
 }
