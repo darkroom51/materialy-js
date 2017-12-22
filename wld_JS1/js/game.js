@@ -39,13 +39,13 @@ function makeGameBoard(container) {
 
 }
 
-functionction makePlayer(board){
+function makePlayer(board){
    var player = document.createElement('div')
     player.style.backgroundColor = 'red'
     player.style.position = 'absolute'
     player.style.left = '0%'
     player.style.top = '0%'
-    player.style.height = 20px;
+    player.style.height = '20px';
 
     board.appendChild(player)
 

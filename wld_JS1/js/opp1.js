@@ -211,10 +211,10 @@ Doctor.prototype.cure = function (person) {         // dodajemy metode tylko do 
 //-----------------------------
 
 
-function Tree (age, height, radius){
-    this.age = age;
-    this.height = height;
-    this.radius = radius;
+function Tree (a, b, c){
+    this.age = a;
+    this.height = b;
+    this.radius = c;
 }
 Tree.prototype.grow = function () {
    this.height += 1;
